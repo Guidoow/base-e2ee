@@ -146,14 +146,18 @@ In this case you just want to test the application encryption and not use the mo
    on /backend and /frontend
 
    ```sh
-   npm install
+   cd backend && npm install && npm audit fix
+   cd ..
+   cd frontend && npm install && npm audit fix
    ```
 
 3. Build NPM packages
    on /backend and /frontend
 
    ```sh
-   npm build
+   cd backend && npm build
+   cd ..
+   cd frontend && npm build
    ```
 
 4. Set the route for Certificate and
@@ -173,6 +177,8 @@ In this case you just want to test the application encryption and not use the mo
    ```sh
    cd frontend && sudo npm run start
    ```
+
+   Now you can access to your https://localhost and test the demo using the base-e2ee!
 
 ##
 

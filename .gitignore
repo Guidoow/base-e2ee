@@ -23,8 +23,6 @@
 **/*.seed
 **/*.pid.lock
 **/.npm
-**/.env
-**/.env.development.local
-**/.env.test.local
-**/.env.production.local
-**/.env.local
+**/package-lock.json
+*.crt
+*.key

@@ -133,5 +133,5 @@ class RequestService {
 }
 
 export const requestSVC = RequestService.getInstance(
-  `${window.location.origin}:${import.meta.env.VITE_PORT}`
+  `${window.location.origin}:${import.meta.env.PORT}`
 );

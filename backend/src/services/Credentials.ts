@@ -22,19 +22,17 @@ class credentialsService {
         "utf-8"
       );
     } catch (error) {
-      console.error(
+      throw new Error(
         "Error while trying to read the certificate for HTTPS upgrade."
       );
-      console.log(error); // UNINPLEMENT.
     }
 
     try {
       this.key = readFileSync(process.env.SSL_KEY_PATH!, "utf-8");
     } catch (error) {
-      console.error(
+      throw new Error(
         "Error while trying to read the private key for HTTPS upgrade."
       );
-      console.log(error); // UNINPLEMENT.
     }
 
     this.requested += 1;
