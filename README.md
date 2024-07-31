@@ -155,9 +155,9 @@ In this case you just want to test the application encryption and not use the mo
    on /backend and /frontend
 
    ```sh
-   cd backend && npm build
+   cd backend && npm run build
    cd ..
-   cd frontend && npm build
+   cd frontend && npm run build
    ```
 
 4. Set the route for Certificate and
@@ -184,7 +184,7 @@ In this case you just want to test the application encryption and not use the mo
 
 ### [DEV] Implementation
 
-In this case you want to use only the modules to perform e2ee in your project whitouth the demonstration data:
+In this case you want to use only the modules to perform e2ee in your project whitout the demonstration data:
 
 1. Include the modules manually from `/modules` into your project services.
 
